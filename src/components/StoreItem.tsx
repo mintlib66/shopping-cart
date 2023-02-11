@@ -52,10 +52,10 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
                 <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
                 <span className="fs-3">{quantity}</span> in cart
                 <Button onClick={() => increaseCartQuantity(id)}>+</Button>
-                <Button onClick={() => removeFromCart(id)} variant="danger">
-                  삭제
-                </Button>
               </div>
+              <Button onClick={() => removeFromCart(id)} variant="danger">
+                삭제
+              </Button>
             </div>
           )}
         </div>
